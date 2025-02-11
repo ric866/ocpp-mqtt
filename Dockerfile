@@ -41,5 +41,5 @@ RUN mkdir ./ocpp_server/
 COPY . /app
 
 # Run Application
-EXPOSE 9002
+EXPOSE 9003
 CMD [ "poetry", "run", "python", "./central_system.py" ]
