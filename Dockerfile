@@ -1,4 +1,4 @@
-FROM python:3.09 as python-base
+FROM python:3.9 as python-base
 
 # https://python-poetry.org/docs#ci-recommendations
 ENV POETRY_VERSION=1.2.0
