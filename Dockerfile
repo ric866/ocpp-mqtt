@@ -34,7 +34,8 @@ COPY poetry.lock pyproject.toml ./
 RUN poetry check
 
 # Install Dependencies
-RUN poetry install
+RUN poetry install --no-root --no-interaction
+RUN mkdir ./ocpp_server/
 
 # Copy Application
 COPY . /app
